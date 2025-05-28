@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/auth"; // Update this with your actual Render backend URL
+const API_URL = "https://demo-backend-gn7p.onrender.com/auth"; // Update this with your actual Render backend URL
 
 export const registerUser = async (username, password) => {
     return axios.post(`${API_URL}/signup/`, { username, password });
