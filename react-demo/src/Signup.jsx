@@ -19,7 +19,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://demo-backend-gn7p.onrender.com/auth/signup/", formData);
+      const response = await axios.post("https://demo-backend-gn7p.onrender.com/api/auth/signup/", formData);
       alert("Sign Up Successful! Please Sign In.");
       navigate("/signin"); // Redirect to sign-in page after registration
     } catch (err) {
