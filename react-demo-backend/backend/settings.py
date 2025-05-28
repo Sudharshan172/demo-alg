@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-1w=4je+&a2k#l2)n!$o02hpyj8atm^#7@pj$@--6&l4zgymg0h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'demo-backend-gn7p.onrender.com',
+    'localhost',  # optional, for local testing
+]
 
 
 # Application definition
@@ -136,4 +139,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Allow your React frontend
+    "https://demo-frontend-1ezu.onrender.com",
 ]
