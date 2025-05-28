@@ -23,7 +23,7 @@ const SignUp = () => {
       alert("Sign Up Successful! Please Sign In.");
       navigate("/signin"); // Redirect to sign-in page after registration
     } catch (err) {
-      setError(err.response?.data?.error || "Signup failed!");
+      setError(err.response?.data?.error || "Account Already Exist! Please SignIn");
     }
   };
 
